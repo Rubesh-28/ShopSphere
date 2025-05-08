@@ -9,6 +9,8 @@ import ContactPage from "./pages/ContactPage";
 import CartPage from "./pages/CartPage";
 import { CartProvider } from "./context/CartContext";
 import AddProductPage from "./pages/AddProductPage";
+import CustomerDashboardPage from "./pages/CustomerDashboardPage";
+import OrderDetailsPage from "./pages/OrderDetailsPage";
 import "./App.css";
 
 export default function App() {
@@ -19,11 +21,17 @@ export default function App() {
           <ul className="nav-links">
             <li><Link to="/">ShopSphere</Link></li>
             <li><Link to="/">Home</Link></li>
+            <li><Link to="/dashboard">Dashboard</Link></li>
+            <li><Link to="/cart">Cart</Link></li>
             <li><Link to="/about">About</Link></li>
             <li><Link to="/contact">Contact</Link></li>
-            <li><Link to="/cart">Cart</Link></li>
-            <li><Link to="/login">Login</Link></li>
-            <li><Link to="/signup">Sign Up</Link></li>
+            <li className="dropdown">
+              <span className="dropdown-toggle">Account</span>
+              <ul className="dropdown-menu">
+                <li><Link to="/login">Login</Link></li>
+                <li><Link to="/signup">SignUp</Link></li>
+              </ul>
+            </li>
           </ul>
         </nav>
         <Routes>
@@ -35,6 +43,8 @@ export default function App() {
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/vendor/add-product" element={<AddProductPage />} />
+          <Route path="/dashboard" element={<CustomerDashboardPage />} />
+          <Route path="/orders/:id" element={<OrderDetailsPage />} />
         </Routes>
       </Router>
     </CartProvider>

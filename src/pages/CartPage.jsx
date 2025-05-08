@@ -1,13 +1,13 @@
 import React from "react";
 import { useCart } from "../context/CartContext";
+import CheckoutPage from "./CheckoutPage";
 
 export default function CartPage() {
   const { cartItems, removeFromCart } = useCart();
 
   const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
   const totalPrice = cartItems.reduce((sum, item) => sum + item.quantity * item.price, 0);
-
-
+  
   if (cartItems.length === 0) {
     return <div className="container"><h2>Your cart is empty.</h2></div>;
   }
@@ -15,7 +15,6 @@ export default function CartPage() {
   return (
     <div className="container">
       <h2>Your Cart</h2>
-
       <div className="cart-summary">
         <p><strong>Total Items:</strong> {totalItems}</p>
         <p><strong>Total Price:</strong> ₹{totalPrice}</p>
@@ -34,6 +33,7 @@ export default function CartPage() {
           </li>
         ))}
       </ul>
+      <CheckoutPage />
     </div>
   );
 }

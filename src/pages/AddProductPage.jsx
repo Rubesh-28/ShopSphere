@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+const InputField = ({ name, type = "text", placeholder, value, onChange, required = true }) => (
+  <input name={name} type={type} placeholder={placeholder} value={value} onChange={onChange} required={required} />
+);
 
 export default function AddProductPage() {
   const [formData, setFormData] = useState({
@@ -26,11 +29,11 @@ export default function AddProductPage() {
     <div className="container add-product-form fade-in-up">
       <h1>Add New Product</h1>
       <form onSubmit={handleSubmit}>
-        <input name="name" placeholder="Product Name" value={formData.name} onChange={handleChange} required />
-        <input name="category" placeholder="Category" value={formData.category} onChange={handleChange} required />
-        <input name="price" type="number" placeholder="Price" value={formData.price} onChange={handleChange} required />
-        <input name="stock" type="number" placeholder="Stock Quantity" value={formData.stock} onChange={handleChange} required />
-        <input name="image" placeholder="Image URL" value={formData.image} onChange={handleChange} required />
+        <InputField name="name" placeholder="Product Name" value={formData.name} onChange={handleChange} />
+        <InputField name="category" placeholder="Category" value={formData.category} onChange={handleChange} />
+        <InputField name="price" type="number" placeholder="Price" value={formData.price} onChange={handleChange} />
+        <InputField name="stock" type="number" placeholder="Stock Quantity" value={formData.stock} onChange={handleChange} />
+        <InputField name="image" placeholder="Image URL" value={formData.image} onChange={handleChange} />
         <textarea name="description" placeholder="Product Description" value={formData.description} onChange={handleChange} required />
         <textarea name="specifications" placeholder="Specifications (comma-separated)" value={formData.specifications} onChange={handleChange} required />
         <button className="btn" type="submit">Add Product</button>
