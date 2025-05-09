@@ -1,5 +1,3 @@
-import React from "react";
-
 export default function VendorDashboardPage() {
   return (
     <div className="container vendor-dashboard">

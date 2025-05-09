@@ -11,10 +11,10 @@ export default function CustomerDashboardPage() {
         <h2 className="section-title">Profile Information</h2>
         <form className="profile-form">
           <div className="form-grid">
-            <input type="text" placeholder="Full Name" />
-            <input type="email" placeholder="Email" />
-            <input type="tel" placeholder="Phone" />
-            <input type="text" placeholder="Address" />
+            <input className="input-field" type="text" placeholder="Full Name" />
+            <input className="input-field" type="email" placeholder="Email" />
+            <input className="input-field" type="tel" placeholder="Phone" />
+            <input className="input-field" type="text" placeholder="Address" />
           </div>
           <button className="btn update-btn" type="submit">Update Profile</button>
         </form>

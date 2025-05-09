@@ -1,4 +1,3 @@
-// src/pages/AdminPanelPage.jsx
 import React, { useState } from "react";
 
 export default function AdminPanelPage() {
