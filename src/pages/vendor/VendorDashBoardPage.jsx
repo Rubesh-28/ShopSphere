@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/VendorDashboardPage.css";
 
 export default function VendorDashboardPage() {
   return (

@@ -9,20 +9,20 @@ export default function AdminPanelPage() {
       case "dashboard":
         return (
           <div className="admin-section">
-            <h2>📊 Admin Dashboard</h2>
+            <h2>Admin Dashboard</h2>
             <p>Overview of users, vendors, orders, and products.</p>
             <div className="admin-stats-grid">
-              <div className="admin-card">👥 Total Users: 1200</div>
-              <div className="admin-card">🛍️ Products: 340</div>
-              <div className="admin-card">📦 Orders: 890</div>
-              <div className="admin-card">📈 Revenue: ₹1.2M</div>
+              <div className="admin-card">Total Users: 1200</div>
+              <div className="admin-card">Products: 340</div>
+              <div className="admin-card">Orders: 890</div>
+              <div className="admin-card">Revenue: ₹1.2M</div>
             </div>
           </div>
         );
       case "users":
         return (
           <div className="admin-section">
-            <h2>👥 Manage Users</h2>
+            <h2>Manage Users</h2>
             <p>View and control access for customers and vendors.</p>
             {/* Placeholder table */}
             <table className="admin-table">
@@ -50,7 +50,7 @@ export default function AdminPanelPage() {
       case "products":
         return (
           <div className="admin-section">
-            <h2>🛒 Moderate Products</h2>
+            <h2>Moderate Products</h2>
             <p>Review product listings, flag, or remove inappropriate items.</p>
             {/* Product list sample */}
             <div className="admin-product-list">
@@ -65,7 +65,7 @@ export default function AdminPanelPage() {
       case "orders":
         return (
           <div className="admin-section">
-            <h2>📦 View Orders</h2>
+            <h2>View Orders</h2>
             <p>Track all orders and filter by status.</p>
             {/* Sample order row */}
             <div className="admin-order-row">
@@ -76,7 +76,7 @@ export default function AdminPanelPage() {
       case "reports":
         return (
           <div className="admin-section">
-            <h2>📈 Reports</h2>
+            <h2>Reports</h2>
             <p>Download and review sales or traffic reports.</p>
             <button className="btn">Download Monthly Report</button>
           </div>

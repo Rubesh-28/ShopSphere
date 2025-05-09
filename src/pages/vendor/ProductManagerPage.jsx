@@ -1,11 +1,14 @@
 import React from "react";
-import "../styles/ProductManagerPage.css";
+import { Link } from "react-router-dom";
 
+function navigateToAddProduct() {
+  window.location.href = "/vendor/add-product";
+}
 export default function ProductManagerPage() {
   return (
     <div className="container product-manager-page">
       <h1>Manage Products</h1>
-      <button className="btn add-product-btn">+ Add New Product</button>
+      <button className="btn add-product-btn" onClick={navigateToAddProduct}>+ Add New Product</button>
       <table className="product-table">
         <thead>
           <tr>

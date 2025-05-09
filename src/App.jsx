@@ -10,6 +10,8 @@ import { CartProvider } from "./context/CartContext";
 import AddProductPage from "./pages/AddProductPage";
 import CustomerDashboardPage from "./pages/CustomerDashBoardPage";
 import AdminPanelPage from "./pages/admin/AdminPanelPage";
+import VendorDashboardPage from "./pages/vendor/VendorDashBoardPage";
+import ProductManagerPage from "./pages/vendor/ProductManagerPage";
 import "./App.css";
 
 export default function App() {
@@ -37,6 +39,8 @@ export default function App() {
           <Route path="/vendor/add-product" element={<AddProductPage />} />
           <Route path="/dashboard" element={<CustomerDashboardPage />} />
           <Route path="/admin" element={<AdminPanelPage />} />
+          <Route path="/vendordash" element={<VendorDashboardPage />} />
+          <Route path="/productmanage" element={<ProductManagerPage />} />
         </Routes>
 
         <footer className="footer">
@@ -44,6 +48,8 @@ export default function App() {
     <Link to="/about">About</Link>
     <Link to="/contact">Contact</Link>
     <Link to="/admin">Admin</Link>
+    <Link to="/vendordash">Vendor Dash</Link>
+    <Link to="/productmanage">Product Manager</Link>
   </div>
 </footer>
 
