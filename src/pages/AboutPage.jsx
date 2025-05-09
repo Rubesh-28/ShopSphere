@@ -5,11 +5,9 @@ export default function AboutPage() {
     <div className="container about-page">
       <section className="category-section">
           <h2>Our Mission</h2>
-          <p>
-            We're committed to providing high-quality products at affordable prices, with a seamless shopping 
+          <p>We're committed to providing high-quality products at affordable prices, with a seamless shopping 
             experience from browsing to checkout. Our team works tirelessly to ensure every customer finds exactly 
-            what they're looking for.
-          </p>
+            what they're looking for.</p>
       </section>
       <h1>Our Product Categories</h1>
       <div className="about-content">

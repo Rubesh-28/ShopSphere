@@ -13,6 +13,7 @@ export default function LoginPage() {
           <InputField type="text" placeholder="Username" />
           <InputField type="password" placeholder="Password" />
           <button type="submit" className="btn">Login</button>
+          <p className="form-footer">Don't have an account? <a href="/signup">Sign Up</a></p>
         </form>
       </div>
     </div>

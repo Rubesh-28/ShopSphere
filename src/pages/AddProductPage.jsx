@@ -1,18 +1,11 @@
 import React, { useState } from "react";
+
 const InputField = ({ name, type = "text", placeholder, value, onChange, required = true }) => (
   <input name={name} type={type} placeholder={placeholder} value={value} onChange={onChange} required={required} />
 );
 
 export default function AddProductPage() {
-  const [formData, setFormData] = useState({
-    name: "",
-    category: "",
-    price: "",
-    image: "",
-    stock: "",
-    description: "",
-    specifications: "",
-  });
+  const [formData, setFormData] = useState({name: "",category: "",price: "",image: "",stock: "",description: "",specifications: "",});
 
   const handleChange = (e) => {
     const { name, value } = e.target;

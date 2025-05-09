@@ -448,6 +448,230 @@ const sampleProducts = [
         "Style: Straight cut"
       ],
       category:"Women's Clothing"
+    },
+    {
+      "id": 31,
+      "name": "Women's Denim Jacket",
+      "price": "2200",
+      "image": "https://media.istockphoto.com/id/1349960077/photo/rocking-denim-wear.jpg?s=612x612&w=0&k=20&c=fB3hzEp_aOF2lk6QmMW4sUGDiQhhQkgwQ9OOO3VlDHc=",
+      "description": "Classic denim jacket with a modern fit and distressed details.",
+      "specifications": [
+        "Material: 100% Cotton Denim",
+        "Closure: Button-front",
+        "Pockets: 2 front pockets",
+        "Fit: Regular",
+        "Care: Machine wash cold"
+      ],
+      "category": "Women's Clothing"
+    },
+    {
+      "id": 32,
+      "name": "Women's Palazzo Pants",
+      "price": "1200",
+      "image": "https://media.istockphoto.com/id/1146261996/photo/full-length-portrait-beautiful-young-girl-wearing-black-crop-top-and-wide-leg-pants-and.jpg?s=612x612&w=0&k=20&c=nUD8NZMs-HgApSzRIiDGdL9FnG-EnFTL4EyO3-jBeOU=",
+      "description": "Flowy palazzo pants with elastic waist for ultimate comfort.",
+      "specifications": [
+        "Fabric: Polyester blend",
+        "Waist: Elastic",
+        "Length: Full-length",
+        "Pattern: Printed",
+        "Occasion: Casual/Formal"
+      ],
+      "category": "Women's Clothing"
+    },
+    {
+      "id": 33,
+      "name": "Women's Winter Coat",
+      "price": "3500",
+      "image": "https://media.istockphoto.com/id/1665707222/photo/young-woman-walking-in-snowy-winter-park-wearing-blue-coat-girl-enjoys-landscape-wearing-hat.jpg?s=612x612&w=0&k=20&c=44gUMkrm0qka6Omgl322EM-mQlO5jynIlGUSUFppSYY=",
+      "description": "Warm winter coat with faux fur trim and waterproof exterior.",
+      "specifications": [
+        "Material: Polyester outer with thermal lining",
+        "Closure: Zipper with button flap",
+        "Pockets: 2 side pockets, 1 inner pocket",
+        "Hood: Detachable with faux fur",
+        "Care: Dry clean recommended"
+      ],
+      "category": "Women's Clothing"
+    },
+    {
+      "id": 34,
+      "name": "Women's Silk Scarf",
+      "price": "800",
+      "image": "https://media.istockphoto.com/id/621861750/photo/silk-scarf-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=z22VMdcLDSvMK93gHBkY-4dn3wKojp3XHpfVNKbcG_Q=",
+      "description": "Luxurious silk scarf with vibrant floral pattern.",
+      "specifications": [
+        "Material: 100% Silk",
+        "Dimensions: 35x35 inches",
+        "Pattern: Floral print",
+        "Edges: Hand-rolled",
+        "Care: Hand wash cold"
+      ],
+      "category": "Women's Clothing"
+    },
+    {
+      "id": 35,
+      "name": "Women's High-Waisted Jeans",
+      "price": "1900",
+      "image": "https://media.istockphoto.com/id/1214456911/photo/smiling-young-woman-full-length-portrait.jpg?s=612x612&w=0&k=20&c=npJVT928Y2YStRUvRSV6y_So37Zievbh_btbK8oHoP4=",
+      "description": "Stylish high-waisted jeans with stretch for comfort and flattering fit.",
+      "specifications": [
+        "Material: 98% Cotton, 2% Elastane",
+        "Rise: High waist",
+        "Fit: Skinny",
+        "Closure: Button and zip",
+        "Care: Machine wash"
+      ],
+      "category": "Women's Clothing"
+    },
+    {
+      "id": 36,
+      "name": "Women's Lace Blouse",
+      "price": "1500",
+      "image": "https://media.istockphoto.com/id/1396133681/photo/female-model-wearing-beige-camisole-cotton-top-and-black-trousers-classic-and-simple-summer.jpg?s=612x612&w=0&k=20&c=YpYkglz2quZzFbEIywB--qSw-qeW4soa2NkqmIL4Y1E=",
+      "description": "Delicate lace blouse with semi-sheer panels and button detailing.",
+      "specifications": [
+        "Material: Polyester lace with cotton lining",
+        "Neckline: Round neck",
+        "Sleeves: Long with cuff",
+        "Closure: Front buttons",
+        "Occasion: Formal"
+      ],
+      "category": "Women's Clothing"
+    },
+    {
+      "id": 37,
+      "name": "Women's Jumpsuit",
+      "price": "2100",
+      "image": "https://media.istockphoto.com/id/1031501036/photo/attractive-woman-in-striped-jumpsuit.jpg?s=612x612&w=0&k=20&c=SUZhiN8_oz_zopb4Hb6AH2_lTnb07xNIXYyvDcXTe0Y=",
+      "description": "Chic one-piece jumpsuit with belt and wide-leg design.",
+      "specifications": [
+        "Material: Viscose blend",
+        "Neckline: V-neck",
+        "Waist: Belt included",
+        "Pockets: Side pockets",
+        "Care: Hand wash recommended"
+      ],
+      "category": "Women's Clothing"
+    },
+    {
+      "id": 38,
+      "name": "Women's Satin Slip Dress",
+      "price": "2400",
+      "image": "https://media.istockphoto.com/id/2203943568/photo/elegant-young-woman-in-a-stylish-dress-posing-against-a-brown-background-showcasing.jpg?s=612x612&w=0&k=20&c=nLUi0XKYHh9APXTlqMfFuvt03tZwPJjN-sQwK2Mt4tM=",
+      "description": "Elegant satin slip dress with adjustable straps for evening wear.",
+      "specifications": [
+        "Material: 100% Polyester satin",
+        "Neckline: Square neck",
+        "Length: Mid-thigh",
+        "Straps: Adjustable",
+        "Occasion: Party/Evening"
+      ],
+      "category": "Women's Clothing"
+    },
+    {
+      "id": 39,
+      "name": "Women's Wool Sweater",
+      "price": "1800",
+      "image": "https://media.istockphoto.com/id/499687078/photo/wool-jacket-woman-cardigan.jpg?s=612x612&w=0&k=20&c=rUkUYq20DhCvMi6NvKeQMLVoKbeC_ubYGvqZZMGB85Y=",
+      "description": "Warm cable-knit sweater in classic winter colors.",
+      "specifications": [
+        "Material: 70% Wool, 30% Acrylic",
+        "Neckline: Crew neck",
+        "Sleeves: Long",
+        "Fit: Relaxed",
+        "Care: Hand wash in cold water"
+      ],
+      "category": "Women's Clothing"
+    },
+    {
+      "id": 40,
+      "name": "Men's Formal Suit (2-Piece)",
+      "price": "6500",
+      "image": "https://media.istockphoto.com/id/493116226/photo/happy-smiling-businessman-in-suit.jpg?s=612x612&w=0&k=20&c=JSuvCrREfPOIxvXoyHWbVOl1LG7vT7TQzK6ZO203EuA=",
+      "description": "Elegant 2-piece suit with a tailored fit, perfect for weddings and business meetings.",
+      "specifications": [
+        "Material: Wool blend",
+        "Fit: Slim",
+        "Includes: Blazer + Trousers",
+        "Closure: Single-button blazer",
+        "Care: Dry clean only"
+      ],
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 41,
+      "name": "Men's Linen Shirt",
+      "price": "1400",
+      "image": "https://media.istockphoto.com/id/1407031756/photo/portrait-of-handsome-man.jpg?s=612x612&w=0&k=20&c=GDHKb2cm8dR4hmdPbcxREGU4bVoQz0zU4ngFj7fmOkU=",
+      "description": "Breathable linen shirt with a relaxed fit, ideal for summer outings.",
+      "specifications": [
+        "Material: 100% Linen",
+        "Fit: Regular",
+        "Collar: Button-down",
+        "Sleeves: Full-length (roll-up cuffs)",
+        "Care: Machine wash cold"
+      ],
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 42,
+      "name": "Men's Track Pants",
+      "price": "1100",
+      "image": "https://media.istockphoto.com/id/181517483/photo/sweatpants.jpg?s=612x612&w=0&k=20&c=9EpGBajKtH1y4quoltY0uMB5zagF5dMkPGUL-ZQWXcM=",
+      "description": "Comfortable track pants with an elastic waistband, perfect for workouts or lounging.",
+      "specifications": [
+        "Material: Polyester-cotton blend",
+        "Fit: Relaxed",
+        "Waist: Elastic with drawstring",
+        "Pockets: 2 side pockets",
+        "Care: Machine wash"
+      ],
+      "category": "Men's Clothing"
+    },{
+      "id": 43,
+      "name": "Men's Wool Overcoat",
+      "price": "4800",
+      "image": "https://media.istockphoto.com/id/587785804/photo/man-coat-isolated-on-white.jpg?s=612x612&w=0&k=20&c=joSr1R_379qfQDrp9l7lnJi_4BIRAI0stZ2KJrmaci0=",
+      "description": "Premium wool overcoat with a double-breasted design for winter sophistication.",
+      "specifications": [
+        "Material: 70% Wool, 30% Polyester",
+        "Fit: Regular",
+        "Closure: Double-breasted",
+        "Pockets: Flap pockets",
+        "Care: Dry clean only"
+      ],
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 44,
+      "name": "Men's Printed Hawaiian Shirt",
+      "price": "950",
+      "image": "https://media.istockphoto.com/id/1616900351/photo/man-is-in-a-hotel-in-cartagena-colombia.jpg?s=612x612&w=0&k=20&c=ntIl5eOvUG_jCP2zs7LB7uvudfibsv-blfj-tJ-X40g=",
+      "description": "Vibrant tropical print shirt for a relaxed, vacation-ready look.",
+      "specifications": [
+        "Material: Rayon blend",
+        "Fit: Loose",
+        "Collar: Camp collar",
+        "Sleeves: Short",
+        "Care: Hand wash"
+      ],
+      "category": "Men's Clothing"
+    },
+    {
+      "id": 45,
+      "name": "Men's Bomber Jacket",
+      "price": "2900",
+      "image": "https://media.istockphoto.com/id/1127217773/photo/childrens-outerwear.jpg?s=612x612&w=0&k=20&c=uokKlZAmydbi3QspXtArVwwW18WXn_q9gE4SsyjCCEU=",
+      "description": "Stylish bomber jacket with ribbed cuffs and a lightweight design for casual outings.",
+      "specifications": [
+        "Material: Nylon outer with polyester lining",
+        "Fit: Regular",
+        "Closure: Zipper front",
+        "Pockets: 2 side pockets",
+        "Care: Machine wash cold"
+      ],
+      "category": "Men's Clothing"
     }
   ];
 export default sampleProducts;

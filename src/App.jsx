@@ -1,4 +1,3 @@
-import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
@@ -9,8 +8,8 @@ import ContactPage from "./pages/ContactPage";
 import CartPage from "./pages/CartPage";
 import { CartProvider } from "./context/CartContext";
 import AddProductPage from "./pages/AddProductPage";
-import CustomerDashboardPage from "./pages/CustomerDashboardPage";
-import OrderDetailsPage from "./pages/OrderDetailsPage";
+import CustomerDashboardPage from "./pages/CustomerDashBoardPage";
+import AdminPanelPage from "./pages/admin/AdminPanelPage";
 import "./App.css";
 
 export default function App() {
@@ -23,17 +22,10 @@ export default function App() {
             <li><Link to="/">Home</Link></li>
             <li><Link to="/dashboard">Dashboard</Link></li>
             <li><Link to="/cart">Cart</Link></li>
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-            <li className="dropdown">
-              <span className="dropdown-toggle">Account</span>
-              <ul className="dropdown-menu">
-                <li><Link to="/login">Login</Link></li>
-                <li><Link to="/signup">SignUp</Link></li>
-              </ul>
-            </li>
+            <li><Link to="/login">Account</Link></li>
           </ul>
         </nav>
+
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/login" element={<LoginPage />} />
@@ -44,8 +36,17 @@ export default function App() {
           <Route path="/cart" element={<CartPage />} />
           <Route path="/vendor/add-product" element={<AddProductPage />} />
           <Route path="/dashboard" element={<CustomerDashboardPage />} />
-          <Route path="/orders/:id" element={<OrderDetailsPage />} />
+          <Route path="/admin" element={<AdminPanelPage />} />
         </Routes>
+
+        <footer className="footer">
+  <div className="footer-links">
+    <Link to="/about">About</Link>
+    <Link to="/contact">Contact</Link>
+    <Link to="/admin">Admin</Link>
+  </div>
+</footer>
+
       </Router>
     </CartProvider>
   );

@@ -1,6 +1,5 @@
 import React from "react";
 
-// Reusable Input Component
 const InputField = ({ type, placeholder }) => (
   <input type={type} placeholder={placeholder} className="input-field" />
 );
