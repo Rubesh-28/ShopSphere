@@ -2,7 +2,6 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import sampleProducts from "../data/Data";
 import { useCart } from "../context/CartContext";
-
 export default function ProductPage() {
   const { id } = useParams();
   const { addToCart } = useCart();

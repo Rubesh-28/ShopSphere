@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import sampleProducts from "../data/Data";
-
 export default function HomePage() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 

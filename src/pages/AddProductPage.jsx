@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 const InputField = ({ name, type = "text", placeholder, value, onChange, required = true }) => (
   <input name={name} type={type} placeholder={placeholder} value={value} onChange={onChange} required={required} />
 );
@@ -16,6 +15,7 @@ export default function AddProductPage() {
     e.preventDefault();
     console.log("Product to submit:", formData);
     alert("Product submitted (simulated). Check console for data.");
+    localStorage.setItem("productData", JSON.stringify(formData));
   };
 
   return (

@@ -1,12 +1,9 @@
 import React from "react";
 import { useCart } from "../context/CartContext";
-
-const InputField = ({ placeholder }) => (
-  <input type="text" placeholder={placeholder} required className="input-field" />
-);
-
+import { useNavigate } from "react-router-dom";
 export default function CartPage() {
-  const { cartItems, removeFromCart } = useCart();
+  const { cartItems, removeFromCart, updateCartQuantity } = useCart();
+  const navigate = useNavigate();
 
   const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
   const totalPrice = cartItems.reduce((sum, item) => sum + item.quantity * item.price, 0);
@@ -16,40 +13,48 @@ export default function CartPage() {
   }
 
   return (
-    <div className="container">
-      <h2>Your Cart</h2>
-
+    <div className="container cart-page">
+      
       <div className="cart-summary">
+        <h2>Cart Summary</h2>
         <p><strong>Total Items:</strong> {totalItems}</p>
         <p><strong>Total Price:</strong> ₹{totalPrice.toFixed(2)}</p>
+        <button className="btn btn-primary" onClick={() => navigate("/checkout")}>
+          Proceed to Checkout
+        </button>
       </div>
 
-      <ul className="cart-list">
-        {cartItems.map(item => (
-          <li key={item.id} className="cart-item">
-            <img src={item.image} alt={item.name} className="cart-img" />
-            <div>
-              <h3>{item.name}</h3>
-              <p>Quantity: {item.quantity}</p>
-              <p>Price: ₹{item.price}</p>
-              <button className="btn" onClick={() => removeFromCart(item.id)}>Remove</button>
-            </div>
-          </li>
-        ))}
-      </ul>
-
-      <div className="checkout-section">
-        <h2>Checkout</h2>
-        <form className="checkout-form">
-          <h3>Shipping Information</h3>
-          <InputField placeholder="Full Name" />
-          <InputField placeholder="Address" />
-          <InputField placeholder="City" />
-          <InputField placeholder="Postal Code" />
-          <InputField placeholder="Phone Number" />
-          <h3>Payment</h3>
-          <button className="btn" type="submit">Place Order</button>
-        </form>
+      <div className="cart-items">
+        
+        <ul className="cart-list">
+          <h2>Your Cart</h2>
+          {cartItems.map(item => (
+            <li key={item.id} className="cart-item">
+              <img src={item.image} alt={item.name} className="cart-img" />
+              <div className="cart-item-details">
+                <h3>{item.name}</h3>
+                <p>Price: ₹{item.price}</p>
+                <div className="quantity-controls">
+                  <button
+                    className="btn btn-sm btn-outline"
+                    onClick={() => updateCartQuantity(item.id, item.quantity - 1)}
+                    disabled={item.quantity <= 1}
+                  >
+                    -
+                  </button>
+                  <span className="quantity">{item.quantity}</span>
+                  <button
+                    className="btn btn-sm btn-outline"
+                    onClick={() => updateCartQuantity(item.id, item.quantity + 1)}
+                  >
+                    +
+                  </button>
+                </div>
+                <button className="btn btn-sm btn-danger" onClick={() => removeFromCart(item.id)}>Remove</button>
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

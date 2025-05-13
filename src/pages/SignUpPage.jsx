@@ -1,5 +1,4 @@
 import React from "react";
-
 const InputField = ({ type, placeholder }) => (
   <input type={type} placeholder={placeholder} className="input-field" />
 );
